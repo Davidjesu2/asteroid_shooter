@@ -1,0 +1,26 @@
+[gd_scene format=3 uid="uid://jsy785gqjg3j"]
+
+[ext_resource type="Script" uid="uid://dtjnmxbr32juj" path="res://scenes/character/player.gd" id="1_eq5ko"]
+[ext_resource type="PackedScene" uid="uid://ry6hc6nayk0" path="res://scenes/laser/laser.tscn" id="2_cxfou"]
+[ext_resource type="Texture2D" uid="uid://ds2bwxv1m1uq4" path="res://assets/sprites/96x4.png" id="3_cxfou"]
+
+[node name="Player" type="CharacterBody2D" unique_id=1878868075 groups=["player"]]
+z_index = 1
+script = ExtResource("1_eq5ko")
+speed_player = 450.0
+laser_scene = ExtResource("2_cxfou")
+metadata/_edit_group_ = true
+
+[node name="Sprite2D" type="Sprite2D" parent="." unique_id=201878865]
+scale = Vector2(0.6, 0.6)
+texture = ExtResource("3_cxfou")
+
+[node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="." unique_id=1396609772]
+polygon = PackedVector2Array(40, -5, 38, -15, 24, -27, -18, -55, -35, -58, -26, -36, -24, -34, -35, -34, -36, -2, -33, 11, -30, 17, -34, 20, -37, 27, -28, 29, -22, 26, 8, 7, 32, 2)
+
+[node name="Detectordearea" type="Area2D" parent="." unique_id=584972252 groups=["player"]]
+
+[node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="Detectordearea" unique_id=990765398]
+polygon = PackedVector2Array(33, 0, 39, -12, 32, -23, -22, -57, -35, -56, -34, -19, -32, -10, -35, 8, -33, 19, -32, 27, -13, 23)
+
+[connection signal="area_entered" from="Detectordearea" to="." method="_on_detectordearea_area_entered"]

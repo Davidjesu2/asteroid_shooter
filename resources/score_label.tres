@@ -1,0 +1,8 @@
+[gd_resource type="LabelSettings" format=3 uid="uid://dgiibsafbt3ii"]
+
+[ext_resource type="FontFile" uid="uid://cpol1bcfkd8dj" path="res://assets/fonts/Zyzol.otf" id="1_pe3ur"]
+
+[resource]
+font = ExtResource("1_pe3ur")
+font_size = 35
+outline_size = 2
