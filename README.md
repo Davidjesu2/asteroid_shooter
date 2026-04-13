@@ -1,3 +1,6 @@
+En fase temprana, al terminar el desarrollo minimo estará el link de Itch.io aqui :)
+
+
 # 🎮 Nombre del Juego
 
 --- 
