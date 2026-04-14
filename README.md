@@ -1,4 +1,10 @@
-En fase temprana, al terminar el desarrollo minimo estará el link de Itch.io aqui :)
+En fase temprana :)
+
+
+## Link a Itch.io para ejecutar: 
+https://davidjesu.itch.io/asteroid-shooter
+Clave: LICC
+
 
 Es mi primer acercamiento a la creación de videojuegos, aprendiendo de un curso!
 
