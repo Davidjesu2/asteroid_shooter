@@ -7,6 +7,7 @@ var random_speed: float
 var speed_rotation: float
 @export var min_rotation_speed: float
 @export var max_rotation_speed: float
+@export var points: int
 
 func _ready() -> void:
 	random_speed = randf_range(min_speed, max_speed)
@@ -18,5 +19,8 @@ func _process(delta: float) -> void:
 
 
 func _on_area_entered(area: Area2D) -> void:
+	if area.is_in_group("laser"):
+		GameManager.add_score(points)
+	
 	if area.is_in_group("player") or area.is_in_group("laser"):
 		queue_free() 

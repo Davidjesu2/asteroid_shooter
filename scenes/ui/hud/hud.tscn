@@ -1,6 +1,7 @@
 [gd_scene format=3 uid="uid://bepttmp7eelca"]
 
 [ext_resource type="LabelSettings" uid="uid://dgiibsafbt3ii" path="res://resources/score_label.tres" id="1_bngdn"]
+[ext_resource type="Script" uid="uid://cu1clg3cqgrtd" path="res://scenes/ui/hud/score_label.gd" id="2_qao66"]
 
 [node name="HUD" type="Control" unique_id=718173576]
 layout_mode = 3
@@ -28,3 +29,4 @@ size_flags_horizontal = 8
 size_flags_vertical = 0
 text = "SCORE: 0"
 label_settings = ExtResource("1_bngdn")
+script = ExtResource("2_qao66")

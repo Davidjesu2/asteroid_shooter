@@ -21,8 +21,6 @@ func crear_laser():
 	add_sibling(laser_scene_instance)
 	laser_scene_instance.position = position
 	
-	
-	
 
 
 func _on_detectordearea_area_entered(area: Area2D) -> void:
