@@ -28,7 +28,7 @@ Es mi primer acercamiento a la creación de videojuegos, aprendiendo de un curso
 
 - Godot 4.6.1
 - GDScript
-- Assets: Arte (Uranía , mi pareja), Música (DJARTMUSIC): https://pixabay.com/es/music/video-juegos-best-game-console-301284/
+- Assets: Arte (Uranía , mi pareja), Música (DJARTMUSIC): https://pixabay.com/es/music/video-juegos-the-return-of-the-8-bit-era-301292/
 
 ---
 
