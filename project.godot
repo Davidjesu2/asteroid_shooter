@@ -19,6 +19,10 @@ config/icon="res://icon.svg"
 
 GameManager="*uid://c8hh5gh7c543d"
 
+[display]
+
+window/stretch/mode="canvas_items"
+
 [global_group]
 
 asteroids=""

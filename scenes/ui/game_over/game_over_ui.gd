@@ -4,7 +4,7 @@ extends Control
 
 
 
-func _process(delta: float) -> void:
+func _process(_delta: float) -> void:
 	if GameManager.is_gamer_over:
 		visible = true
 		final_score_label.text = "Your Score: " + str(GameManager.score)

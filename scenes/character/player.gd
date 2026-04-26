@@ -4,7 +4,7 @@ extends CharacterBody2D
 @export var laser_scene: PackedScene
 
 
-func _physics_process(delta: float) -> void:
+func _physics_process(_delta: float) -> void:
 	var quiere_disparar = Input.is_action_just_pressed("shoot")
 	process_inputs()
 	move_and_slide()

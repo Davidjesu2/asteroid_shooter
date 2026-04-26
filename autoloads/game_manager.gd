@@ -3,7 +3,7 @@ extends Node
 var score = 0
 var is_gamer_over = false
 # Called every frame. 'delta' is the elapsed time since the previous frame.
-func _process(delta: float) -> void:
+func _process(_delta: float) -> void:
 	if is_gamer_over and Input.is_action_just_pressed("shoot"):
 		restar_game()
 
