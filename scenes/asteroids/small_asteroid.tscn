@@ -2,6 +2,7 @@
 
 [ext_resource type="Texture2D" uid="uid://cl8un08ma28u7" path="res://assets/sprites/rock-small.png" id="1_ckhff"]
 [ext_resource type="Script" uid="uid://b1dciimbp7rdq" path="res://scripts/asteroid.gd" id="1_kfbcv"]
+[ext_resource type="PackedScene" uid="uid://d4epita8dl0d1" path="res://scenes/Particles/explosion_particle.tscn" id="2_ooo1b"]
 
 [sub_resource type="CircleShape2D" id="CircleShape2D_kfbcv"]
 radius = 32.0
@@ -14,6 +15,7 @@ max_speed = 1000.0
 min_rotation_speed = -180.0
 max_rotation_speed = 180.0
 points = 3
+explosion_scene = ExtResource("2_ooo1b")
 metadata/_edit_group_ = true
 
 [node name="Sprite2D" type="Sprite2D" parent="." unique_id=2055862833]

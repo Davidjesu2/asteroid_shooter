@@ -1,7 +1,8 @@
 [gd_scene format=3 uid="uid://cv3rce54ut6xj"]
 
-[ext_resource type="Texture2D" uid="uid://df1g1usfs4r2s" path="res://assets/sprites/rock-big.png" id="1_6lffe"]
 [ext_resource type="Script" uid="uid://b1dciimbp7rdq" path="res://scripts/asteroid.gd" id="1_y2s20"]
+[ext_resource type="PackedScene" uid="uid://d4epita8dl0d1" path="res://scenes/Particles/explosion_particle.tscn" id="2_ra15y"]
+[ext_resource type="Texture2D" uid="uid://cmlnugnnqetbn" path="res://assets/sprites/asteroide grande x4.png" id="2_y2s20"]
 
 [sub_resource type="CircleShape2D" id="CircleShape2D_y2s20"]
 radius = 84.0238
@@ -14,10 +15,13 @@ max_speed = 400.0
 min_rotation_speed = -200.0
 max_rotation_speed = 200.0
 points = 1
+explosion_scene = ExtResource("2_ra15y")
 metadata/_edit_group_ = true
 
 [node name="Sprite2D" type="Sprite2D" parent="." unique_id=499346150]
-texture = ExtResource("1_6lffe")
+position = Vector2(-15.714285, 22.857143)
+scale = Vector2(0.8125, 0.8125)
+texture = ExtResource("2_y2s20")
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=328604620]
 position = Vector2(0, 3)
